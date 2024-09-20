@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Form Inputs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required/>
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required/>
+      <br /><br />
+      <!-- radio, checkbox, date, number -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+<br>
+<hr>
+<br>
+    <form id="myForm" >
+        <!-- Text Input -->
+        <label for="username"></label>Username:</label>
+        <input type="text" id="username" name="username" pattern="[A-Za-z0-9]{5,10}" required/>
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"  />
+        <br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99">
+ 
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required/>
+        <br /><br />
+        
+        <input id="buttonas" type="submit" value="Submit" />
+      </form>
+
+     
+  </body>
+  <script>
+    function validateEmail(event) {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if (!validRegex.test(email.value)) {
+            alert("Email not valid")
+        }
+       event.preventDefault();
+    }
+    const form = document.getElementById("myForm");
+    const email = document.getElementById("email");
+
+    form.addEventListener("submit",validateEmail);
+  </script>
+</html>
