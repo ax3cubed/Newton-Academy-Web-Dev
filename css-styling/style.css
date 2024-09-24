@@ -1,0 +1,89 @@
+
+ 
+
+h1{
+ color: green;
+ margin: 0;
+}
+.subtitle{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#button{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(83, 119, 83);
+    border-radius: 10px;
+}
+
+#things-to-learn ul{
+    list-style: square;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section#things-to-learn{
+    margin-top: 30px;
+    label{
+        font-size: 20px;
+    }
+}
+
+.box{
+    width: 200px;
+    height: 100px;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+.static{
+    position: static;
+}
+
+.relative{
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+@media(max-width:600px){
+    .container{
+        background-color: coral;
+    }
+   
+}
+@media (min-width:601px) and (max-width:1024px) {
+    .container{
+        background-color: lightblue;
+    }
+}
+@media (min-width:1025px) {
+    .container{
+        background-color: beige;
+    }
+}
+@media (orientation:portrait) {
+    .container{
+        background-color: red;
+    }
+}
+
+.container{
+    width: 100%;
+}
