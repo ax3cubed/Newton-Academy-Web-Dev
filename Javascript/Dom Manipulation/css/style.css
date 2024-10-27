@@ -1,0 +1,35 @@
+body{
+    margin: 10px;
+}
+#heading {
+    color: darkblue;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ 
+.text {
+    font-size: 1.2em;
+    color: darkgreen;
+    background-color: lightyellow;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.changed {
+    background-color: lightblue;
+    border-color: darkblue;
+    color: darkred;
+    font-weight: bold;
+}
+
+.button{
+    height: 40px;
+    border-radius:5px;
+    border: 1px solid gray;
+    background: whitesmoke;
+    font-size: 1.2em;
+    cursor: pointer;
+}
